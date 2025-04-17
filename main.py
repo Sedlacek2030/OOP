@@ -34,12 +34,6 @@ class CCGUI(QMainWindow):
         self.map_handler = MMap()
         self.map_handler.save_map()
 
-        # Get screen resolution and set the window size to fit the screen
-        screen = QApplication.primaryScreen()
-        screen_geometry = screen.availableGeometry()
-
-        # Set the window to be as large as the screen, but adjust for multiple monitors
-        self.setGeometry(screen_geometry)  # Adjust to available geometry
         self.setWindowState(Qt.WindowState.WindowMaximized)  # Start maximized
 
         self.central_widget = QWidget()
