@@ -7,21 +7,21 @@ import folium
 
 class MissionMap:
     def __init__(self):
-        self.map = folium.Map(location=[49.7433, 15.1000], zoom_start=8)
+        self.map = folium.Map(location=[49.7433, 15.1000], zoom_start=8) #skoro střed ČR (jinak Číhošť)
         self.data_file = "missions.json"
         self.load_data()
 
     def save_map(self, filename="map.html"):
         self.map.save(filename)
 
-    def save_data(self):
+    def save_data(self): #TBF
         with open(self.data_file, "w") as file:
-            json.dump([], file)  # Placeholder for future data storage
+            json.dump([], file)  # Placeholder pro ukládání
 
-    def load_data(self):
+    def load_data(self): #TBF
         try:
             with open(self.data_file, "r") as file:
-                pass  # Placeholder for loading data in the future
+                pass  # Placeholder pro načítání
         except FileNotFoundError:
             self.save_data()
 
