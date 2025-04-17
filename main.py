@@ -26,7 +26,7 @@ class MMap:
             self.save_data()
 
 
-class CommandCenterGUI(QMainWindow):
+class CCGUI(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("MBS")
@@ -63,6 +63,6 @@ class POI():
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = CommandCenterGUI()
+    window = CCGUI()
     window.show()
     sys.exit(app.exec())
