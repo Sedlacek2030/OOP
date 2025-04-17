@@ -5,7 +5,7 @@ from PyQt6.QtWebEngineWidgets import QWebEngineView
 from PyQt6.QtCore import Qt
 import folium #mapa
 
-class MissionMap:
+class MMap:
     def __init__(self):
         self.map = folium.Map(location=[49.7433, 15.1000], zoom_start=8) #skoro střed ČR (jinak Číhošť)
         self.data_file = "missions.json"
@@ -29,9 +29,9 @@ class MissionMap:
 class CommandCenterGUI(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Mission Briefing System")
+        self.setWindowTitle("MBS")
 
-        self.map_handler = MissionMap()
+        self.map_handler = MMap()
         self.map_handler.save_map()
 
         # Get screen resolution and set the window size to fit the screen
