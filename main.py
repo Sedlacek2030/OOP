@@ -48,7 +48,7 @@ class CCGUI(QMainWindow):
         self.refresh_button.clicked.connect(self.refresh_map)
         self.layout.addWidget(self.refresh_button)
 
-    def refresh_map(self):
+    def refresh_map(self): #useless here?
         self.map_handler.save_map()
         self.map_view.setHtml(open("map.html").read())
 
