@@ -1,9 +1,9 @@
 import sys
 import json
-from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QPushButton, QWidget
+from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QPushButton, QWidget #UI
 from PyQt6.QtWebEngineWidgets import QWebEngineView
 from PyQt6.QtCore import Qt
-import folium
+import folium #mapa
 
 class MissionMap:
     def __init__(self):
