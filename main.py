@@ -7,7 +7,7 @@ import folium #mapa
 
 class MMap:
     def __init__(self):
-        self.map = folium.Map(location=[49.7433, 15.1000], zoom_start=8) #skoro střed ČR (jinak Číhošť)
+        self.map = folium.Map(location=[49.7433, 15.1000], zoom_start=8) #skoro střed ČR
         self.data_file = "missions.json"
         self.load_data()
 
