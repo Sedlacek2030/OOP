@@ -1,6 +1,0 @@
-Zlepšit UI (seznam PIO, lišta, ...)
-Získat ikony (3 barvy)
-Dodělat další třídy
-Dodělat ukládání a načítání
-Udělat vytváření POI
-Udělat editování POI
