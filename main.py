@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtWebEngineWidgets import QWebEngineView
 import folium
-
+#pip install PyQt6 PyQt6-WebEngine folium
 
 class MissionMap:
     def __init__(self):
